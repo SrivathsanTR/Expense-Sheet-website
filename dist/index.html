@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#185c43">
+  <meta name="description" content="Together — a simple shared expense tracker for your household or group. Track spending, split costs, and see the whole picture.">
+  <title>Together — Shared expenses, made clear</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23185c43'/%3E%3Cpath d='M11 14h18M16 9v20M24 14v15' stroke='%23d4edaa' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/src/styles.css">
+  <script type="module" src="/src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app"><p class="app-loading">Opening your household…</p></div>
+  <dialog id="modal" class="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toast-container" class="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <noscript>Together needs JavaScript to track your expenses. Please enable it in your browser.</noscript>
+</body>
+</html>
